@@ -9,7 +9,7 @@ function step2 (map, next) {
 
   var baseLayers = {
       'mapbox': L.tileLayer('https://{s}.tiles.mapbox.com/v3/norfolkjs.i5f2oehb/{z}/{x}/{y}.png'),
-
+      'openstreetmap': L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png'),
       'mapquest': L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
         subdomains: '1234'
       })
@@ -19,6 +19,7 @@ function step2 (map, next) {
 
   baseLayers.mapbox.addTo(map);
   baseLayers.mapquest.addTo(map);
+  baseLayers.openstreetmap.addTo(map);
 
   next(null, map, baseLayers, overlayLayers);
 }
