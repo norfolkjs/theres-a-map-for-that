@@ -1,0 +1,43 @@
+1. Intro
+
+  - Why?
+    - growing sub-field: intersection of CS and GIS
+    - new technologies
+
+  - Web + Map = Google Maps?
+    - kind of basically-ish true; Google sure wants you to think that
+    - has both technical and legal limitations
+      - legal: TOS
+      - technical: Projections, Functions
+
+  - Conflationary Dichotomies
+    - geocoding vs. reverse-geocoding
+    - longitude vs. latitude
+    - Cartography vs. Geography
+    - geometry vs. geography
+
+1. Sans Javascript
+
+  - CartoDB
+
+  - Mapbox
+    - geojson.io
+
+  - Yay!
+    - Great for building maps
+    - Not as great for consumption
+
+2. With Javascript and GeoJSON
+
+  - "Custom" backend with PostGIS + Geoserver
+    - custom, as in, not Google. 
+    - allows you to ask non-trivial questions of your data
+  
+  - "Custom" frontend with Leaflet.js + others
+    - custom, as in, not Google.
+    - quotation marks, because user experience can remain common
+
+  - Rapid Prototype Example
+
+3. Weatherblur.com Example
+
