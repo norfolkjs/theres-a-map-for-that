@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Norfolk JS, 2014</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.css" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/async/0.8.0/async.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.js"></script>
+</head>
+<body>
+  <div id="map" style='width: 100%; height: 600px'></div>
+
+  <script src="./step1.js"></script>
+  <script src="./step2.js"></script>
+  <script src="./step3.js"></script>
+  <script src="./step4.js"></script>
+
+  <script>
+    async.waterfall([ 
+      step1,
+      step2,
+      step3,
+      step4
+    ]);
+
+  </script>
+</body>
+</html>
